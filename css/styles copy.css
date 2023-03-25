@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+
+.contenedor-header {
+    background-color: rgba(20, 45, 148, 0.87);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header .nombre p {
+    /*color: rgb(37, 151, 151);*/
+    color: rgb(237, 239, 243);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: rgb(37, 151, 141);
+    cursor: pointer;
+}
+
+.nav-responsive {
+    background-color: rgb(151, 149, 37);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.contenedor-header header img {
+    width: 20px;
+}
+
+/* INICIO */
+
+/**portada de la página*/
+#inicio{
+    position: relative;
+    background-image: url(img/FondoSistemas.jpg);
+    width: 100%;
+    height: 120vh;
+    background-size: auto;
+    background-position: center;
+    text-align: center;
+}
+
+.inicio {
+    background-color: rgb(74, 105, 218);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenedor-tarjeta {
+    background-color: rgba(26, 14, 71, 0.87);
+    max-width: 600px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.inicio .contenedor-tarjeta .contenedor-imagen img{
+    margin-top: 40px;
+    width: 80%;
+    border-radius: 100%;
+    border: 5px solid rgb(37, 151, 151);
+}
+
+.inicio .contenedor-tarjeta h1 {
+    margin-top: 22px;
+    font-size: 30px;
+    color: white;
+}
+
+.inicio .contenedor-tarjeta h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+
+/*.inicio .contenedor-tarjeta .contenedor-redes a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 100%;
+    transition: .3s;
+}
+
+.inicio .contenedor-tarjeta .contenedor-redes img{
+    width: 40px;
+    height: 40px;
+}
+
+.inicio .contenedor-tarjeta .contenedor-redes a:hover {
+    background-color: rgb(26, 14, 71, 0.87);
+    cursor: pointer;
+}*/
+
+/* SISTEMAS */
+
+.sistemas {
+    background-color: rgb(74, 105, 218);
+    color: white;
+    padding: 50px 20px;
+}
+
+.sistemas .contenedor-sistemas {
+    background-color: rgb(20, 45, 148, 0.87);
+    max-width: 1100px;
+    margin: 65px auto;
+    border-radius: 30px;
+    /*text-align: center;*/
+    position: relative;
+}
+
+.sistemas h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sistemas .contenedor-sistemas p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.sistemas .fila {
+    display: flex;
+}
+
+.sistemas .fila .columna {
+    width: 50%;
+}
+
+.sistemas .fila .columna h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.sistemas .fila .columna ul {
+    list-style: inside;
+    padding: 0 20px 20px;
+}
+
+.sistemas .fila .columna ul li {
+    margin: 10px 0;
+    color: rgb(37, 151, 151);
+}
+
+.sistemas .fila .columna ul li span {
+    color: white;
+}
+
+.sistemas button {
+    cursor: pointer;
+    background-color: rgb(28, 9, 72);
+    border: none;
+    width: auto;/* fit-content;*/
+    color: white;
+    display: inline;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+    border-radius: 30px;
+}
+
+.sistemas button {
+    cursor: pointer;
+    background-color: rgb(28, 9, 72);
+    border: none;
+    width: auto;/* fit-content;*/
+    color: white;
+    display: inline;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+    border-radius: 30px;
+}
+
+/* HOMOGÉNEAS  quizás sea todo lo mismo .. . para todas las materias*/
+
+.homogeneas {
+    background-color: rgb(74, 105, 218);
+    color: white;
+    padding: 50px 20px;
+}
+
+.homogeneas .contenedor-homogeneas {
+    background-color: rgba(20, 45, 148, 0.87);
+    max-width: 1100px;
+    margin: 65px auto;
+    border-radius: 30px;
+}
+
+.homogeneas h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.homogeneas .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homogeneas .fila .columna {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.homogeneas .fila .columna h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.homogeneas .fila .izquierda {
+    border-right: 2px solid rgb(28, 9, 72);
+    border-radius: 10px;
+}
+
+.homogeneas .fila .derecha {
+    border-left: 2px solid rgb(28, 9, 72);
+    border-radius: 10px;
+}
+
+.homogeneas .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: rgb(28, 9, 72);
+    position: relative;
+    border-radius: 10px;
+}
+
+.homogeneas .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.homogeneas .fila .item .lugar {
+    color:rgb(37, 151, 151);
+    font-size: 22px;
+    display: block;
+}
+
+.homogeneas .fila .izq {
+    border-right: 2px solid rgb(37, 151, 151);
+    margin-right: 20px;
+}
+
+.homogeneas .fila .der {
+    border-left: 2px solid rgb(37, 151, 151);
+    margin-left: 20px;
+}
+
+.homogeneas .fila .item .conector-izq {
+    height: 2px;
+    background-color: rgb(37, 151, 151);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+   
+}
+
+.homogeneas .fila .item .circulo-izq {
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(37, 151, 151);
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.homogeneas .fila .item .conector-der {
+    height: 2px;
+    background-color: rgb(37, 151, 151);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+   
+}
+
+.homogeneas .fila .item .circulo-der {
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(37, 151, 151);
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    background-color: rgb(74, 105, 218);
+    color: white;
+    padding: 50px 20px;
+}
+
+.contacto .contenedor-contacto {
+    background-color: rgba(20, 45, 148, 0.87);
+    max-width: 800px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.contacto h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .columna {
+    width: 80%;
+    padding: 10px;
+    position: relative;
+    margin: auto;
+}
+
+.contacto .columna input {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 20px;
+    background-color: rgb(28, 9, 72);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+}
+
+.contacto .columna textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 20px;
+    background-color: rgb(28, 9, 72);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: rgb(28, 9, 72);
+    border: none;
+    width: fit-content;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+}
+
+.contacto button:hover {
+    background-color: rgb(72, 89, 219);
+    transition: .2s;
+}
+
+footer {
+    background-color: rgb(28, 9, 72);
+    text-align: center;
+    position: relative;
+}
+
+footer .contenedor-redes img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:980px){
+    nav {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 67px;
+        background-color: rgba(49, 46, 46, 0.87);
+        width: 180px;
+    }
+    nav.responsive ul {
+        display: block !important;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid white;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sistemas .fila {
+        display: block;
+    }
+    .sistemas .fila .columna {
+        width: fit-content;
+    }
+
+    .habilidades .fila {
+        display: block;
+        padding-bottom: 10px;
+    }
+    .habilidades .fila .columna {
+        width: 100%;
+    }
+    .habilidades .fila .columna .barra {
+        width: 100%;
+    }
+
+    .homogeneas .fila {
+        display: block;
+        padding-bottom: 10px;
+    }
+    .homogeneas .fila .columna {
+        width: 90%;
+    }
+    .homogeneas .fila .derecha {
+        margin-left: 20px;
+    }
+
+    .contacto .fila {
+        display: block;
+    }
+    .contacto .fila .columna {
+        width: 100%;
+    }
+}

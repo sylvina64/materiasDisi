@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--PONER EL NOMBRE DE LA MATERIA EN TITLE-->
+    <title>AM I</title>
+    <link rel="stylesheet" href="../css/stylesMaterias.css">
+</head>
+<body>
+
+    <!-- MENU SUPERIOR-->
+
+    <div class="contenedor-header">
+        <header>
+           <div class="nombre">
+            <p>ANÁLISIS MATEMÁTICO I</p>
+           </div> 
+            <nav id="nav">
+                <ul>
+                    <li><a href="#contenido" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#contenido" onclick="seleccionar()">GUÍA y PROGRAMA</a></li>
+                    <li><a href="#videos" onclick="seleccionar()">PDF y VIDEOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <img src="../img/bars-solid.svg" alt="Icono de barras">
+            </div>
+        </header>
+    </div>
+
+  
+    <!-- GUÍA Y PROGRAMA   -->
+
+    <section id="contenido" class="contenido">
+        <div class="contenedor-contenido">
+            <h2>GUÍA y PROGRAMA</h2>
+
+                <p> En esta sección encontrarás la información oficial de la materia: Programa y guía (si es que hay de esta última)
+
+            <h2><!--botones centrados-->
+                <a href="https://www.frba.utn.edu.ar/wp-content/uploads/2021/06/Analisis-Matematico-I-1a-parte.pdf" target="_blank">
+                    <button>GUÍA 1° PARTE</button>
+                </a>
+
+                <a href="https://www.frba.utn.edu.ar/wp-content/uploads/2021/06/Analisis-Matematico-I-2a-parte.pdf" target="_blank">
+                    <button>GUÍA 2° PARTE</button>
+                </a>
+
+                <a href="https://www.frba.utn.edu.ar/wp-content/uploads/2021/06/Tabla-de-dervadas-e-integrales.pdf" target="_blank">
+                    <button>Tabla de derivadas</button>
+                </a>
+            </h2>
+
+        </div>
+    </section>
+
+   <!-- VÍDEOS -->
+
+   <section id="videos" class="videos">
+    <div class="contenedor-videos">
+        <h2>LISTA DE ARCHIVOS y VÍDEOS</h2>
+        <!--ARCHIVOS PDF - COL IZQ -->
+        <div class="fila">
+            <div class="columna izquierda">
+                <h3>ARCHIVOS</h3>
+                <div class="item izq">
+                    <H4>Aún no hemos subido contenido</H4>
+                        
+                    <div class="conector-izq">
+                        <div class="circulo-izq"></div>
+                    </div>            
+                </div>
+                <!-- ANTES DE AGREGAR UN ARCHIVO (O LINK), COPIAR ESTA SECCIÓN Y LUEGO AGREGAR LA INFORMACIÓN
+                <div class="item izq">
+                    <span class="lugar">Descripción archivo 1                            
+                        <a href="#" target="_blank">
+                            <img src="../img/icono-pdf.png" alt="Icono de pdf" width="30" height="30">
+                        </a>
+                    </span>
+                        <h5>resumen de lo que contiene el archivo</h5>
+                    <div class="conector-izq">
+                        <div class="circulo-izq"></div>
+                    </div>                       
+                </div> -->
+            </div>
+
+            <!--VIDEOS - COL DERECHA-->
+            <div class="columna derecha">
+                <h3>VÍDEOS </h3>
+               <div class="item der">
+                    <H4>Aún no hemos subido contenido</H4>
+                    <div class="conector-der">
+                        <div class="circulo-der"></div>
+                    </div>
+               </div>
+                <!-- ANTES DE AGREGAR UN VÍDEO, COPIAR ESTA SECCIÓN Y LUEGO AGREGAR LA INFORMACIÓN
+                <div class="item der">
+                    <span class="lugar">Contenido Video 1. 
+                        <a href="#" target="_blank">
+                            <img src="../img/youtube.png" alt="Icono de Youtube" width="30" height="25">
+                        </a>
+                    </span>
+                    <h5>resumen de lo que contiene el archivo</h5>
+                    
+                    <div class="conector-der">
+                        <div class="circulo-der"></div>
+                    </div>
+                </div>-->    
+                
+                <div class="conector-der">
+                    <div class="circulo-der"></div>
+                </div>
+            </div>                            
+        </div>
+    </div>
+</section>
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+
+            <form onsubmit="alert('¡ mensaje enviado correctamente ! Gracias! a la brevedad lo veremos y adjuntaremos en la sección correspondiente')" class="columna" action="https://formsubmit.co/materiasDISI@gmail.com" enctype="multipart/form-data" method="POST">
+                
+                <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+
+                <input type="text" name="telefono" placeholder="teléfono (optativo)">
+
+                <input type="text" name="asunto" placeholder="Asunto" required>
+
+                <input type="file" name="adjunto"  multiple /> <!--accept=".pdf,.jpg,.png"-->
+
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+
+                <button type="submit">Enviar Mensaje </button>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#inicio">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+
+        </div>
+    </section>
+    <footer>
+        <div class="contenedor-redes">
+   
+            <a href="#"><!--hay que poner el link al canal de la 19-->
+                <img src="../img/youtube.png" alt="Icono de Youtube">  
+            </a>
+
+            <a href="#"><!--hay que crear un grupo de ayuda de 19 Sistemas de telegram-->
+                <img src="../img/telegram.png" alt="Icono de Telegram">    
+            </a>
+            
+            <a href="#"> <!--hay que poner los links a los grupos de ayuda de 19 Sistemas-->
+                <img src="../img/whatsapp.png" alt="Icono de Whatsapp">    
+            </a>
+            <a href="https://chat.whatsapp.com/KzK1DAryuxB9Ig0gtbGbgf"><!--hay que poner el link al canal de la 19-->
+                <h5>
+                    powered by Syl - 2023<br>.
+                </h5>
+            </a>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
